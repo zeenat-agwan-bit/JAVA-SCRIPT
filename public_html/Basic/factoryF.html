@@ -1,0 +1,33 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //in own lang class and obj constructor
+            //for writing multiple objects
+            //when a func returns an object,we call it a factory function.
+            //it can prduce object instance without new keyword or classes,
+/*
+ need:var sam={model:'galaxy'};
+    var Lg={model:'5654'};
+    var Nokia={model:'0laxy'};
+    
+  */
+function mobile(model_no){
+    return{
+        model:model_no,
+        price:function(){
+            return "price is Rs.3000";
+        }
+        
+    };
+}
+var sams=mobile('galaxy');
+var nokia=mobile('3309');
+document.write(sams.model+","+","+sams.price()+"<br>");
+document.write(nokia.model+","+","+nokia.price());
+        </script>
+    </body>
+</html>

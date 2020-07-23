@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>to</title>
+    </head>
+    <body>
+        <p id="myid">mmmmmmmmmm
+            mmmmmmmmmmmmmmm mmmmmmm mmmmm mmmmmmmmm mmmmmmmm
+            mmmmmmmmmmmmmmm mmmmmmmmmmm mmmmmmmmmmmmmmmmm
+            mmmmmmmmmmm mmmmmmmmm mmmmmmmmmmm mmmmmmmm
+        </p>
+        <script>
+            //way 1
+            function changeCSS() {
+                document.getElementById("myid").style = 'color:red';
+            }
+            setTimeout(changeCSS, 2000);//after 2 sec that func shoild run and clr become red
+            //way 2
+            setTimeout(function changeCSS() {
+                document.getElementById("myid").style = 'color:red';
+            }, 5000);
+
+            //way 3 anonyms
+            setTimeout(function () {
+                document.getElementById("myid").style = 'color:red';
+            }, 5000);
+
+            //way 4 through arrow
+            setTimeout(() => {
+                document.getElementById("myid").style = 'color:blue';
+            } , 2000);
+        </script>
+    </body>
+</html>

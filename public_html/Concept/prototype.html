@@ -1,0 +1,26 @@
+<!--using var let or const you can create private properties and methods-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //we achieve inheritance using prototype
+            
+            //diff bet instance and prototype(super class)
+//we can also define method using prototype
+            var Mobile = function (model_no) {
+                //instance members
+                this.model = model_no;//public
+                this.price = 900;//private
+            };
+            var sams = new Mobile('galaxy');
+            var nokia = new Mobile('9090');
+            //classname.prototype.key='value';
+            Mobile.prototype.color = 'white';//shared
+            document.write(sams.color);
+            //console.log(sams);
+            console.log(nokia);
+        </script>
+    </body>
+</html>

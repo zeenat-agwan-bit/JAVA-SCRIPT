@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+Object.addEventListner(event,handler,capturePhase);
+it can works with Dom as ell as html
+-->
+<html>
+    <head>
+        <title>DOM EVENT MODEL</title>
+    </head>
+    <body>
+        <h1>Event Model</h1>
+        <button id='mybtn'>Click Me</button>
+<!--        <button onclick="alert('Button Clicked');">Click mE</button>-->
+        <script>
+            function show() {
+                alert('button clicked 1');
+            };
+             function disp() {
+                alert('button clicked 2');
+            };
+        
+            
+            var btn = document.getElementById("mybtn");
+            //prevents from overriding
+            btn.addEventListener("click", show,false);//false means bubbling phase
+             btn.addEventListener("click", disp,true);//true means capture phase
+            
+
+
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1>we are learning</h1>
+            <h1>I  Am  h1</h1>
+        </div>
+        <script>
+            //creating new element h2
+            var nENode = document.createElement("h2");
+
+            //creating text node
+            var nTNode = document.createTextNode("Text by JS");
+
+            //creating comment node
+            var nCNode = document.createComment("comment by JS");
+
+            //append new text node to new element node (h2)
+            nENode.appendChild(nTNode);
+
+            var targetN = document.getElementById("myid");
+
+            //append new element node to div
+            targetN.appendChild(nENode);
+
+            targetN.appendChild(nCNode);
+            console.log(targetN);
+            
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<html>
+    <!--when extra features came from super class which are unnecessary to use-->
+    <head>
+        <title>Composition Or Mixins</title>
+    </head>
+    <body>
+        <script>
+//            //function for inheritance
+//            function extend(child, parent) {
+//                child.prototype = Object.create(parent.prototype);
+//                child.prototype.constructor = child;
+//            }
+////Super class
+//            var Human = function () {
+//
+//            };
+//
+//            //Prototype member
+//            Mobile.prototype.eat = function () {
+//                return "super class eat method";
+//            }
+//            Mobile.prototype.walk = function () {
+//                return "super class walk method";
+//            }
+//            Mobile.prototype.talk = function () {
+//                return "super class walk method";
+//            }
+////sub class Animal
+//            var Animal = function () {
+//
+//            };
+////sub class animal extends super class Human
+//            extend(Animal, Human);
+//
+////sub class Robot
+//            var Robot = function () {
+//
+//            };
+////sub class Animal extends super class Human
+//
+//            extend(Robot, Human);
+//class Robot
+            var Robot = function () {
+
+            };
+//mixin Function
+            function mixin(target, ...sources) {
+                Object.assign(target, ...sources)
+            }
+            var eating = {
+                eat: function () {
+                    return "I can Eat<br>";
+                }
+            }
+            ;
+            var walking = {
+                walk: function () {
+                    return   "I can walk<br>";
+                }
+            };
+
+            var talking = {
+                talk: function () {
+                    return    "I can talk<br>";
+                }
+            };
+
+            var starting = {
+                start: function () {
+                    return     "Robo can start<br>";
+                }
+            };
+//Human Class
+            var Human = function () {
+
+            }
+//composite features to human
+            mixin(Human.prototype, eating, walking, talking);
+            ////composite features to Robot
+            mixin(Robot.prototype, eating, walking, talking);
+
+//target source
+            // var Zee = Object.assign({}, eating, walking, talking);
+            var Raj = new Human();
+            var Sam = new Human();
+            var Robo=new Robot();
+           // var Robot = Object.assign({}, starting, walking, talking);
+            document.write(Raj.eat());
+            document.write(Sam.walk());
+            document.write(Sam.talk());
+            
+//document.write(Robot.eat());
+            document.write(Robot.start());
+//what to do if there are too many people with same characteristics
+
+
+
+
+
+        </script>
+    </body>
+</html>

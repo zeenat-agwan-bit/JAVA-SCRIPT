@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+createElement(ele nm)
+createTextNode(string)
+createComment(string)
+createDocumentFragment()-==Node Interface methods
+==>appendChild() or insertBefore()
+it isnt part of active document tree structure,
+change made to the fragment dont affect the document
+-->
+
+<html>
+    <head>
+        <title>LEARNING  JS</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1 >HELLO  USERS</h1>
+            <h1 >welcome  USERS</h1>
+        </div>
+
+        <script>
+ var tar=document.getElementById("myid");
+        //appending new h2 to div
+        //creating new comment node
+     
+        var nn=document.createComment("ZEEENATTT'S");
+        
+        //appending new text node to div
+        tar.appendChild(nn);
+        console.log(tar);
+        
+
+        </script>
+    </body>
+
+</html>

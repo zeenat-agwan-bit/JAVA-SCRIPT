@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+internet explorer similar to innerHTML but ficused to text
+child nodes removed and merge in a single string.
+-->
+<html>
+    <head>
+        <title>innerText</title>
+        </head>
+    <body>
+        <ul id="myul"> <li>ITEM 1</li> <li>ITEM 2</li> <li>ITEM 3</li> <li>ITEM
+                4</li></ul>
+        <script>
+            var u=document.getElementById("myul");
+            u.innerText="<span>this is text</span>";//replaced
+           // console.log(u.innerText);//inner text will be displayed
+           // console.log(u.childNodes);
+           console.log(u);
+        </script>
+    </body>
+</html>

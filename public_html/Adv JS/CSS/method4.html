@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+HTMLTableSectionElement
+Rows
+insertRow() -in perticular section
+deleteRow()
+-->
+<html>
+    <head>
+        <title>HTMLTableSectionElement</title>
+    </head>
+    <body>
+
+        <table border="1" id="mytab">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+
+                </tr>
+            </thead>
+            <tbody id="mytbody">
+                <tr>
+                    <td>11</td>
+                    <td>raj</td>
+                    <td>js</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>som</td>
+                    <td>c++</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>33</td>
+                    <td>koi</td>
+                    <td>java</td>
+                </tr>
+            </tfoot>
+        </table>
+        <script>
+
+            var tbody = document.getElementById("mytbody");
+            var row = tbody.rows;
+            
+            //console.log(row[0]);//to see specified content
+          //  row[1].innerHTML = "<td>100</td>Jyoti<td>React</td>";//replace content
+
+            var rr = tbody.insertRow(-1);//jyoti row replaced with som and som moved above
+tbody.deleteRow(1);//som is removed
+        </script>
+    </body>
+</html>

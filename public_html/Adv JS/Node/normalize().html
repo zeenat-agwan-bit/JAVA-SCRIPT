@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+removes empty text nodes,and joins adjacent text
+nodes so there will be no adjacent nodes.
+normalize()
+-->
+<html>
+    <head>
+        <title>normalization</title>
+    </head>
+    <body>
+        <div id="myid">
+            <h1>we are learning</h1>
+            <h1>I  Am  h1</h1>
+        </div>
+        <script>
+            //Targetting Element where we will append new Nodes
+            var targetNode = document.getElementById("myid");
+
+            //Creating and append new text
+            targetNode.appendChild(document.createTextNode("Hello "));
+
+            //Creating and append new text
+            targetNode.appendChild(document.createTextNode("My Name "));
+
+            //Creating and append new text
+            targetNode.appendChild(document.createTextNode("Is Zeenat"));
+            targetNode.normalize();
+            
+            console.log(targetNode.childNodes);
+
+
+        </script>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <!--   0-sunday
+       1-january-->
+    <body>
+        <script>
+var a=new Date();//current date
+
+var b=new Date(8640000);//1 jan 1970 universal time(milisecond)
+//var c=new Date(year,month,day,hours,seconds,miliseconds);
+
+var c=new Date(2019,4,45,9,45,35,0);//jun 14 09:45:35
+//you can take any no of args 
+
+//var d=new Date(dateString);
+var d=new Date("May 12,2018 10:16:05)");
+
+//ISO
+var e=new Date("2020-02");
+var f=new Date("2020-03-21T12:00:00Z");
+
+//Short date(no leading zero) MM/DD/YYYY
+var g=new Date("03-04-2020");
+
+//Long date(month and day can be in any order) MMM DD YYYY
+//month written in full or abbreviated
+//commas are ignored
+var g=new Date("Mar 25 2020");
+
+document.write(a + "<br>");
+
+document.write(b + "<br>");
+document.write(c + "<br>");
+
+document.write(d + "<br>");
+
+document.write(e);
+
+document.write(f);
+document.write(g);
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+css style declaration object
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+       </head>
+    <body>
+   
+        <h2 id="myh2"
+            style="background-color: darkgrey ; color:black !important;">Heading</h2>
+        <script>
+
+            var h = document.getElementById("myh2");
+            var csdo=h.style;
+          //  console.log(csdo.cssText);//collection
+          
+        //  console.log(csdo.length);
+        
+          //  csdo.cssText= "color:black ;font-size: 20px;";
+       //   console.log(csdo.item[0]);
+       
+           // console.log(h);//no of property 1
+           // 
+    //   var propValue =   csdo.getPropertyValue('color');
+     //  console.log(propValue);
+     //  
+  //    var propValue =   csdo.removeProperty('color');
+     //  console.log(propValue);
+     
+//     csdo.setProperty('font-size' ,'90px' ,'important');//important priority 90px for all
+//            console.log(h);
+
+var propPri=csdo.getPropertyPriority('color');
+console.log(propPri);
+        </script>
+    </body>
+</html>

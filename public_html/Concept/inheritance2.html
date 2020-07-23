@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <p>Prototype Inheritance</p>
+        <script>
+
+            /*
+             Mobile function(prototype)<--Mobile.Prototype(__proto__)<--Object.prototype <--null
+             */
+            //Super class
+            var Mobile = function () {
+                this.a = 10; //instance(copied individually)
+            }
+
+            Mobile.prototype.z = 30; //static(shared)
+
+            //Sub-class
+            var Samsung = function () {
+                Mobile.call(this);
+                this.b = 20;
+            }
+            
+           
+
+            //Prototype inheritance
+            //child class nm prototype cons=parent class nm and prototype
+            Samsung.prototype = Object.create(Mobile.prototype);
+            Samsung.prototype.constructor = Samsung;
+
+            Samsung.prototype.z = 50;
+
+            var m = new Mobile();
+            var s = new Samsung();
+            document.write(m.a + "<br>");//10
+            document.write(m.b + "<br>");//undefined
+            document.write(m.z + "<br>");//same class ka prototype h access ho jaega
+            document.write(s.z + "<br>");//50
+        </script>
+
+    </body>
+</html>

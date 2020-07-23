@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+api 
+-->
+<html>
+    <head>
+        <title>csd</title>
+        <style>
+            .myclass{
+                font-style: italic;
+                font-size: 70px;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="myp" class="myclass1" style="color:yellowgreen;">Paragraph</p>    
+        <script>
+            var p = document.getElementById("myp");
+            var allCSSProp = window.getComputedStyle(p);
+            console.log(allCSSProp.fontStyle);//readonly
+            console.log(allCSSProp.fontSize);//read only
+           // allCSSProp.fontSize="80px"; read only
+           var csdo=p.style; //this obj can both read and write
+           csdo.fontSize="90px";//read write both and iline only not for external
+           console.log(p);//for inline
+        </script>
+    </body>
+</html>

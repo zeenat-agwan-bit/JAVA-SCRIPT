@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+moveBy()
+window
+horizontalPixels
+verticalPixels
+-->
+<html>
+    <head>
+        <title>Moving</title>
+    </head>
+    <body>
+        <h1>Moving window</h1>
+        <button type="button" id="opnbtn">Open Window</button>
+        <button type="button" id="movesbtn">Move Window</button>
+        <script>
+            var newWindow;
+            function  opnWin() {
+                newWindow = window.open("", "newWindow", "width=300 ,height=200");
+                newWindow.document.write(" I Am New Window");
+            }
+            function  moveWin() {
+              //  newWindow.moveBy(200, 200);//right , down pos neg
+                newWindow.moveTo(200, 200);//here to there one time only
+                newWindow.focus();
+            }
+            document.getElementById("opnbtn").addEventListener("click",opnWin);
+             document.getElementById("movebtn").addEventListener("click",moveWin);
+            
+        </script>
+    </body>
+</html>

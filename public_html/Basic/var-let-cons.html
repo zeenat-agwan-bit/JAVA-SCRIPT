@@ -1,0 +1,41 @@
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //let is good practice no chances of override
+    function myVar(){
+    var a = 10;
+    if(true){
+        var a=20;
+        document.write(a + "<br>");
+          
+    }
+    document.write(a + "<br>");
+         //20 20 reasigning 
+}
+//myVar();
+           
+            function myLet(){
+    var a = 50;
+    if(true){
+        let a=80;
+        document.write(a + "<br>");
+          
+    }
+    document.write(a + "<br>");
+          
+}
+//myLet();//80 50
+           
+           
+           
+           for(let i=0;i<5;i++){
+               document.write(i+"<br>");
+           }
+           document.write(i+"<br>");//error:i is not defined
+        </script>
+    </body>
+</html>

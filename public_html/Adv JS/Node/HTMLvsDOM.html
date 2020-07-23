@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+HTML attribute vs DOM property
+-->
+<html>
+    <head>
+        <title>Text</title>
+    </head>
+    <body>
+        <h2 id="myh2">hello java script</h2>
+        <p id="myp" title="para" class="myclass">Paragraph</p>
+
+        <script>
+            var p = document.getElementById("myp");
+            console.log(Object.prototype.toString.call(p));//what is it
+            console.log(p.id);//its own or htmls
+            console.log(p.className);//myclass
+            p.title="mypara";//we can change also
+            console.log(p);
+        </script>
+    </body>
+</html>

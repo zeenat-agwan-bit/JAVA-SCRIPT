@@ -1,0 +1,62 @@
+
+
+<!DOCTYPE html>
+<!--
+DOM Event Flow/Event Propagation
+Phases:
+capture phase (netscape) events top to bottom
+Target PHASE
+Bubbling Phase (microsoft) events bottom to top
+........file.css or use style tag inside html 
+
+-->
+
+<html>
+    <head>
+        <link rel="stylesheet" href="file.css">
+        <title>Event Capture and bubbling</title>
+    </head>
+    <body>
+        <h1>Event Capture and bubbling</h1>
+        <div id="one">1
+            <div id="two">2
+                <div  id="three">3
+                    <div id="four">4
+                    </div>>
+                </div>
+            </div>
+        </div>
+        <script>
+//            //Bubbling Phase 4 3 2 1
+//            document.getElementById("one").addEventListener("click", function () {
+//                console.log("1");
+//            }, false);
+//            document.getElementById("one").addEventListener("click", function () {
+//                console.log("2");
+//            }, false);
+//            document.getElementById("one").addEventListener("click", function () {
+//                console.log("3");
+//            }, false);
+//            document.getElementById("one").addEventListener("click", function () {
+//                console.log("4");
+//            }, false);
+
+  //Capturing Phase 1 2 3 4
+            document.getElementById("one").addEventListener("click", function () {
+                console.log("1");
+            }, true);
+            document.getElementById("one").addEventListener("click", function () {
+                console.log("2");
+            }, true);
+            document.getElementById("one").addEventListener("click", function () {
+                console.log("3");
+            }, true);
+            document.getElementById("one").addEventListener("click", function () {
+                console.log("4");
+            }, true);
+
+
+        </script>
+    </body>
+
+</html>

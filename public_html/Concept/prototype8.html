@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <p>Prototype Inheritance</p>
+        <script>
+            //constructor
+            /*
+             Mobile function(prototype)<--Mobile.Prototype(__proto__)<--Object.prototype <--null
+             */
+            function Mobile() {
+               this.a=10
+            }
+            console.log(Mobile.prototype);
+            var LG = new Mobile();
+            console.log(LG.__proto__);
+
+            //verify
+            console.log(Mobile.prototype === LG.__proto__);//true
+            console.log(Mobile === LG.__proto__.constructor);//true
+            cosole.log(Mobile ===
+            Mobile.prototype.constructor);//true
+
+        </script>
+    </body>
+</html>

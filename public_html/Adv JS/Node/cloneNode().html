@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+exact copy the node 
+you can also store it in a variable
+on true -entire with children
+false- only element attribute and value
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+          </head>
+    <body>
+       
+        <ul id="myul">
+            <li>ITEM 1</li>
+              <li>ITEM 2</li>
+                <li>ITEM 3</li>
+                  <li>ITEM 4</li>
+                   </ul>
+                    <div id="mydiv">
+                    </div>
+       
+       
+        <script>
+          var u=document.getElementById("myul");
+          var duplicateNode=u.cloneNode(true);
+         // console.log(document.body);
+          //console.log(duplicateNode);
+          var div=document.getElementById("mydiv");
+          //to append with div
+          div.appendChild(duplicateNode);
+          console.log(document.body);//we are displaying with body
+          
+        </script>
+    </body>
+</html>

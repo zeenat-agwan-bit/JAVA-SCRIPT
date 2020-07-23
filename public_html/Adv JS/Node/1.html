@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title class="geek">TREE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 id="myid">I AM HEADING  <!--hey there--></h1>
+       
+        <p id="myidd">I AM PARAGRAPH</p>
+        <div>TODO write content</div>
+        <script>
+            //Document
+            document.write("<br><br>--------------Document--------------<br><br>");
+            document.write(document.nodeName + "<br>");
+            document.write(document.nodeValue + "<br>");
+            document.write(document.nodeType + "<br>");
+            //element
+            document.write("<br><br>--------------element--------------<br><br>");
+            var elm = document.getElementById("myid");
+            document.write(elm.nodeName + "<br>");
+            document.write(elm.nodeValue + "<br>");
+            document.write(elm.nodeType + "<br>");
+
+            //text
+            document.write("<br><br>--------------text--------------<br><br>");
+            var text = document.getElementById("myid");
+            document.write(elm.nodeName + "<br>");
+            document.write(elm.nodeValue + "<br>");
+            document.write(elm.nodeType + "<br>");
+            
+             //text
+            document.write("<br><br>--------------text--------------<br><br>");
+            var text = document.getElementById("myid");
+            document.write(elm.firstChild.nodeName + "<br>");
+            document.write(elm.firstChild.nodeValue="this is the value" + "<br>");
+            document.write(elm.firstChild.nodeType + "<br>");
+document.getElementById("myid").firstChild.nodeValue="Learning advanced"
+
+
+            //comment
+            document.write("<br><br>--------------comment--------------<br><br>");
+            var text = document.getElementById("myid");
+            document.write(text.firstChild.nextSibling.nodeName + "<br>");
+            document.write(text.firstChild.nextSibling.nodeValue + "<br>");
+            document.write(text.firstChild.nextSibling.nodeType + "<br>");
+
+
+
+        </script>
+    </body>
+</html>

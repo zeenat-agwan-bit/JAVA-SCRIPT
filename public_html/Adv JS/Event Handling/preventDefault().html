@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>prevent</title>
+    </head>
+    <body>
+        <h1>Event Methods</h1>
+        <div id="mydiv" style="width: 200px; background-color: burlywood ">
+            <a href="http://www.github.com" id="mylink">CLICK AND OPEN GEEK</a>
+
+        </div>
+        <script>
+            function stopLink(e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+            function div1(e) {
+                this.style.backgroundColor = 'orange';
+            }
+            var l = document.getElementById("mylink");
+             var d= document.getElementById("mydiv");
+            l.addEventListener("click", stoplink, false);
+               d.addEventListener("click", div1, false);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>check property</title>
+         </head>
+    <body>
+        <script>
+            //check properties exit 
+           
+            function Mobile(model_no) {
+                this.model = model_no;
+                this.memory =4;      
+                        }
+
+            var sams = new Mobile('galaxy');
+            var nokia = new Mobile('9090');
+            
+           if ('memory'in nokia){
+               document.write("available");
+           }
+           else{
+               document.write("not available");
+           }
+        </script>
+    </body>
+</html>

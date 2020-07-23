@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+var a=[10,20,30]
+[x,y,z]=a
+//array passing to a function
+-->
+<html>
+
+    <body>
+        <script>
+            var arr = [10, 20, 30];
+            function show([value1, value2, value3, ...rest])//when we dont know the exact size
+            {
+                console.log(value1);
+                console.log(value2);
+                console.log(rest);
+            }
+            show(arr);
+            //-----------------------------------------------------------------------------
+            //array returning from a function
+            var arrr = [10, 20, 30];
+            function show1(z) {
+                return z;
+            }
+
+           // var x = show1(arrr);
+            var [value1, value2, value3] = show1(arrr);
+            console.log(value1);
+            console.log(value2);
+        </script>
+    </body>
+</html>

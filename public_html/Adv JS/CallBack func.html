@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+one function call another function as an argument
+-->
+<html>
+
+    <body>
+        <script>
+            function show(a) {
+                console.log("I am show function" + a);
+            }
+            function geek(a, callbck) {
+
+                callbck(a);
+            }
+            geek(100, show);
+            //++++++++++++++++++++++++++++++++++++++++++++
+            // way 2
+            function geek(a, callbck) {
+                var a = 100;
+                callbck(a);
+            }
+            geek(function show(a) {
+                console.log("I am show function" + a);
+            });
+            //++++++++++++++++++++++++++++++++++++++++++++
+            // way 3 anonymous
+            function geek(a, callbck) {
+                var a = 100;
+                callbck(a);
+            }
+            geek(function (a) {
+                console.log("I am show function" + a);
+            });
+           //++++++++++++++++++++++++++++++++++++++++++++
+            // way 4 arrow func (no curly braces)
+            function geek(a, callbck) {
+                var a = 100;
+                callbck(a);
+            }
+            geek (a=> 
+                console.log("I am show function" + a)); 
+           
+        </script>
+    </body>
+</html>

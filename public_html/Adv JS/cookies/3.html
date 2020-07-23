@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+Reading Cookie
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <form action="" name="myform" method="post">
+            UserName : <input type="text" name="name">   <br><br>
+            Email : <input type="email" name="email">   <br><br>
+            language : <input type="text" name="lang">   <br><br>
+            <input type="button" name="set" value="setCookies" onclick="setCookies()">
+            <input type="button" name="get" value="getCookies" onclick="getCookies()">
+
+        </form>
+
+        <script>
+            function setCookies() {
+                document.cookie = "name=" + document.myform.name.value +";max-age="+60*60*24*10;
+                document.cookie = "email=" + document.myform.email.value+";max-age="+60*60*24*10;
+                document.cookie = "language=" + document.myform.lang.value+";max-age="+60*60*24*10;
+                
+            }
+         //name=rahul;email=rahu@gmail.com;language=hindi;
+            function getCookies() {
+                var cookiesArray = document.cookie.split(";");
+                
+                for (var i = 0; i < cookiesArray.length; i++) {
+                    var valueArray = cookiesArray[i].split("=");
+                    if (valueArray[0].trim() == "name") {
+                        document.myform.name.value = valueArray[1];
+                    }
+                  else  if (valueArray[0].trim() == "email") {
+                        document.myform.email.value = valueArray[1];
+                    }
+               else     if (valueArray[0].trim() == "language") {
+                        document.myform.lang.value = valueArray[1];
+                    }
+
+                }
+                console.log(cookiesArray);
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+keypress
+keydown
+keyup
+-->
+<html>
+    <head>
+        <title>Project</title>
+    </head>
+    <body>
+        <h1>focus Event</h1>
+        <div id="mydiv" style="windows: 200px; height: 200px;
+             background-color: orchid;padding: 10px; " >
+            Name<input type="text" id="mytext" >
+        </div>
+            <script>
+                var txt = document.getElementById("mytext");
+                function key(e) {
+                 console.log(e.type+'  ' +e.keyCode+ '  ' + String.fromCharCode(e.keyCode));
+                }
+                 txt.addEventListener("keydown", key, false);
+                txt.addEventListener("keypress", key, false);
+                txt.addEventListener("keyup", key, false);
+
+
+            </script>
+    </body>
+</html>

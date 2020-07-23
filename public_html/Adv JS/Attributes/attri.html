@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+HTML attribute vs DOM property
+-->
+<html>
+    <head>
+        <title>Text</title>
+    </head>
+    <body>
+        <div>
+            <p>Helloooo</p>
+        </div>
+        <h2 id="myh2" title="somedata" class="myclass">Heading</h2>
+        <script>
+            var h = document.getElementById("myh2");
+             console.log(h.attributes);//NamenODEmAP
+            console.log(h.attributes[2]);//class="myclass"
+             console.log(h.attributes['title']);//title="somedata"
+        </script>
+    </body>
+</html>

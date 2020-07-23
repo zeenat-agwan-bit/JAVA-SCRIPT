@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //capital
+            function Mobile(model_no) {
+                //instance members
+                this.model = model_no;
+                this.price = function () {
+                    document.write(this.model + "Price rs 4000<br> ");
+                };
+
+
+            }
+
+            var sams = new Mobile('galaxy');
+            var nokia = new Mobile('9090');
+            sams.price();
+            nokia.price();
+        </script>
+    </body>
+</html>

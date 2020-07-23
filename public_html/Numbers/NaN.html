@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+indicates that number is not a legal property.
+NaN never compare equal to anything,even itselF
+its same as the Number.Nan Property.
+-->
+<html>
+
+    <body>
+        <script>
+            var a = "50";
+            var b = 10;
+            var c = 30;
+            var d = "heel"
+            //10/zee=illegal
+            document.write(a / b + "<br>");//5
+            document.write(b / d + "<br>");//NaN
+            document.write(isNaN(a) + "<br>");//false
+            document.write(isNaN(d) + "<br>");//true
+            document.write(isNaN(c));//false
+if(d==NaN || NaN==NaN){
+    document.write("equal" +"<br>");
+    }
+    else{
+        document.write("not equal");//not equal bcz it is not equal to anything
+        
+}
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Local Variable</title>
+    </head>
+    <body>
+        <script>
+            var i="i am globle";
+             function show() {
+                //local variable
+                 var j = "i am local";
+                document.write(j + "<br>");
+            }
+            show();
+            document.write(i + "<br>");
+            
+                document.write(j+"<br>");
+                function disp(){
+                    document.write(j);
+                }
+                disp();
+                if(true){
+                    document.write(j);//j is not defined
+                }
+            
+        </script>
+    </body>
+</html>

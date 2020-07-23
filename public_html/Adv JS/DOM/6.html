@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+more specific
+-->
+<html>
+    <head>
+        <title class="geek">Tree</title>
+    </head>
+    <body>
+        <h1> Learning JS</h1>
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p id="myclass"><span class="myspan">Bye</span>Geeky
+            <span class="myspan1">Bye</span></p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+
+
+
+        </div>
+        <div id="show1">
+            <p class="zee">!st p inside div</p>
+            <span class="my">Bye</span>
+        </div>
+        <div>hello i am div</div>
+
+        <script>
+            //more specific
+            var result = document.getElementById("myclass").querySelectorAll("span.myspan");
+            document.write(result);
+            console.log(result);
+
+            //more specific 2
+            var result1 = document.querySelectorAll("#show1 >.zee >span.my");
+            document.write(result1);
+            console.log(result);
+
+            //lengh
+            var len = document.querySelectorAll(".geek").length;//4
+            document.write(len);
+            console.log(len);
+
+            //loop
+            var len1 = document.querySelectorAll(".geek").length;//4
+            for (let i = 0; i < len1; i++) {
+                var res1 = document.querySelectorAll(".geek")[i];
+                document.write(res1 + "<br>");
+                console.log(res1);
+            }
+
+
+
+
+        </script>
+    </body>
+</html>

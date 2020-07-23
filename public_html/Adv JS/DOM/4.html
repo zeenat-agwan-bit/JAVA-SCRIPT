@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+querySelector
+-->
+<html>
+    <head>
+        <title class="geek">Tree</title>
+    </head>
+    <body>
+        <h1> Learning JS</h1>
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p class="myclass"><span>Bye</span>Geeky</p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+        </div>
+        <script>
+            //element selector   
+            var result = document.querySelector("p");//return first match only
+            // var result = document.querySelector("p ,h");//h,show who find first
+            document.write(result + "<br>");
+            console.log(result);
+            
+            //ID selector   
+            var result1 = document.querySelector("#show");//return first match only
+            // var result = document.querySelector("#show,#show1");//#show,show who find first
+            document.write(result1 + "<br>");
+            console.log(result1);
+            
+             //class selector   
+            var result2 = document.querySelector(".geek , .geek1");//return first match only
+            // var result = document.querySelector(".geek,.geek myclass");//geek,show who find first
+            document.write(result2 + "<br>");
+            console.log(result2);
+            
+            //attribute selector
+            //child selector
+
+        </script>
+    </body>
+</html>

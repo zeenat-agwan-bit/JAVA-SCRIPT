@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>method overriding</title>
+        </head>
+    <body>
+    <script>
+        class Father{
+           
+            showMoney(){
+                return  "Father's Money<br>";
+            }
+        }
+        class Son extends Father{
+           
+            showMoney(){
+                return "Son's Money<br>"
+            }
+        }
+        var s=new Son(10000);
+        document.write(s.showMoney());
+       
+        </script>
+    </body>
+</html>

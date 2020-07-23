@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            //Fuction Expression
+            var mufun1 = function show() {
+                document.write("zeenat");
+            };
+            //anonymous Function
+            var myfun2 = function () {
+                document.write("jannat");
+            };
+            //arrow function
+            var myfun = (a, ...args) => {
+                document.write(a + "" + args);
+            };
+            /*var myfun=a=>document.write(a);
+             document.write("zeee");*/
+            myfun(10);
+            //arrow function
+            var mine = c => c;//without curly and return
+            document.write(mine(10));
+
+        </script>
+    </body>
+</html>
+/*
+var myfunN=c=>c;    //work
+var myfunN=c=>{c};  //wont work
+var myfunN=c=>{return c};  //work
+*/

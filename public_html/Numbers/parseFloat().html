@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--
+parse a string an returns an float
+parseFloat(string,radix);
+
+-->
+<html>
+
+    <body>
+        <script>
+            document.write(parseFloat("10") + "<br>");//10
+            document.write(parseFloat("12.00") + "<br>");//12
+            document.write(parseFloat("15.45") + "<br>");//15.45
+            document.write(parseFloat("10 20 30") + "<br>");//10
+            document.write(parseFloat(" 90 ") + "<br>");//90
+            document.write(parseFloat("10 years") + "<br>");//10
+            document.write(parseFloat("020") + "<br>");//20
+            document.write(parseFloat("12", 8) + "<br>");//12 
+            document.write(parseFloat("0x12") + "<br>");//0
+            document.write(parseFloat("10", 16) + "<br>");//10
+            document.write(parseFloat("") + "<br>");//NaN
+        </script>
+    </body>
+</html>

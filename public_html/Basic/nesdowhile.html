@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>HEllo JS</title>
+    </head>
+    <body>
+        <script>
+            var i = 0;
+            do {
+                document.write("Outer");
+                 
+                document.write(i);
+               
+                i++;
+                document.write("<br>");
+                var j = 0;
+                do {
+                    document.write("inner");
+                    document.write(j);
+                    j++;
+                    document.write("<br>");
+                } while (j < 5)
+            } while (i < 3);
+
+            document.write("rest of the code");
+        </script>
+    </body>
+</html>

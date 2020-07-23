@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!--
+removeAttribute and hasAttribute
+-->
+<html>
+    <head>
+        <title>Attribute</title>
+    </head>
+    <body>
+
+
+        <h2 id="myh2" title="somedata" class="myclass">Heading</h2>
+        <script>
+            var h = document.getElementById("myh2");
+            var has=h.hasAttribute('id');//true(exist or not)
+          h.removeAttribute('class');
+          console.log(h);
+          console.log(has);
+        </script>
+    </body>
+</html>

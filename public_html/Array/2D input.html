@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>2D</title>
+    </head>
+    <body>
+        <script>
+            /*
+             zee hp 10
+             00 01 02 
+             10 11 12
+             20 21 22
+             */
+//defiming 2d
+            var rows = 2;
+            var cols = 3;
+            var zee = new Array(rows);
+
+            for (var i = 0; i < rows; i++) {
+                zee[i] = new Array(cols);
+
+            }
+            
+            //input for array
+            for (var i = 0; i < rows; i++) {
+                for (var j = 0; j < cols; j++) {
+                    zee[i][j] = prompt("Enter Name : ");
+                }
+
+            }
+            
+            //displaying value
+             for (var i = 0; i < rows; i++) {
+                for (var j = 0; j < cols; j++) {
+                    document.write(zee[i][j] + " ");
+                   // document.write(i + " " + j + "|");
+                }
+                
+                document.write("<br>");
+            }
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

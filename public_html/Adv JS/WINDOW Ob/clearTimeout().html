@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>clear timeout</title>
+    </head>
+    <body>
+        <p id="myid">mmmmmmmmmm
+            mmmmmmmmmmmmmmm mmmmmmm mmmmm mmmmmmmmm mmmmmmmm
+            mmmmmmmmmmmmmmm mmmmmmmmmmm mmmmmmmmmmmmmmmmm
+            mmmmmmmmmmm mmmmmmmmm mmmmmmmmmmm mmmmmmmm
+        </p>
+        <button type="button" id="btn">Clear Time</button>
+        <script>
+        //like alarm clock it stops alarm
+     var timeoutID=  setTimeout(() => {
+                document.getElementById("myid").style = 'color:blue';
+            } , 2000);
+            
+             function clrtime() {
+              clearTimeout(timeoutID);
+            }
+            
+              document.getElementById("btn").addEventListener("click" , clrtime);
+        </script>
+    </body>
+</html>

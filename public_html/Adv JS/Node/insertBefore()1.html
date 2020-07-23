@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>insertBefore()</title>
+    </head>
+    <body>
+        <div id="myid">
+            <ul id="myul">
+                <li>jQuery</li>
+                <li id="mylang">Angular JS</li>
+                <li>React JS</li>
+                <li id="myd3">D3 JS</li>
+            </ul>
+            <ul>
+                <li>java pro</li>
+                <li id="myc">C++ pro</li>
+            </ul>
+        </div>
+        <script>
+            //parentNode.insertBefore(newNode , referenceNode)
+
+            //when  need insert existing node
+            //ACCESSING PARENT NODE
+             var moveNode = document.getElementById("myc");
+            var refNode = document.getElementById("mylang");
+       document.getElementById("myul").insertBefore(moveNode, refNode);
+
+
+            console.log(parentNode);
+
+
+        </script>
+    </body>
+</html>

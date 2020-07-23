@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Closure</title>
+
+    <body>
+        <script>
+            //nested func is closure
+            
+            function  show() {
+                var j = "J local of outer"
+
+                document.write(j + "<br>");
+                function inner() {
+                    var i = "I local of inner"
+
+                    document.write(j + "<br>");
+                    document.write(i + "<br>");
+                }
+                inner();
+                document.write(j + "<br>");
+                document.write(i + "<br>");
+
+            }
+            show();
+        </script>
+    </body>
+</html>

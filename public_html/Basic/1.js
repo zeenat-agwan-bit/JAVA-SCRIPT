@@ -1,0 +1,1 @@
+window.alert("hell00000000000o");

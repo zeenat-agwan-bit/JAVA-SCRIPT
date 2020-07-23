@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+   
+    <body>
+      <script>
+ //         "use strict";  //all below will follow this just an exmpl is ths
+          a=10;
+          console.log(a);//it will be strict that a is  not define
+          function abc(){
+               "use strict"  //mode on (for perticular function)
+              b=20;
+              console.log(b);//it will be strict that b is  not define properly
+          }
+          abc();
+          
+           function abc(a,b,b){
+              return a+b+b;  //duplicate parameter not allowed
+          }
+              console.log(abc(10,20,50));
+          </script>
+         
+    </body>
+</html>

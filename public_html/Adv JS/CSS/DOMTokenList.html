@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--
+interface
+1 classList property
+length
+value
+item()
+add()
+remove()
+contains()
+toggle() remove come 
+-->
+<html>
+    <head>
+        <title>classList</title>
+        <!--      inline-->
+        <style>
+            .myclass1{
+                background-color: blue;
+            }
+            .myclass2{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="myh2" title="somedata" class="myclass2   myclass3 "
+            style="color:aqua ;font-size: 50px;">Heading</h2>
+        <script>
+
+            var h = document.getElementById("myh2");
+            var eleClass = h.classList; //return list
+            
+            console.log(eleClass[0].length);//myclass2 //8
+            
+           console.log(eleClass.value); //myclass2
+           
+           console.log(eleClass.item(1));//myclass3
+           
+           eleClass.add("myclass4","myclass6","myclass7");
+           console.log(h);
+           
+            eleClass.remove("myclass6","myclass7");
+           console.log(h);
+           
+            eleClass.replace("myclass4","myclass1");
+           console.log(h);
+           
+            var c= eleClass.contains("myclass1");
+           document.writeln(c);//true
+           
+          var t= eleClass.toggle("myclass2");
+          document.write(t);//false
+            document.write(t);
+           
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>class(special function)</title>
+         </head>
+    <body>
+        <script>
+            /*
+             A class can contain only one constructor
+             */
+            
+            //class declaration
+            class Mobile{
+                constructor(){
+                    //Instance member
+                    this.a=12;
+                    //var.a=12; private
+                    this.show=function (){
+                        return "Instance Member";
+                    };
+                }
+                //Prototype Member
+                display(){
+                    return "Prototype Member";
+                }
+            }
+            var nokia=new Mobile();
+          document.write(nokia.show()+"<br>");
+          document.write(nokia.a+"<br>");
+          document.write(nokia.display());
+          
+          
+            </script>
+        </body>
+</html>

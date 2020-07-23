@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+one function call another function as an argument
+-->
+<html>
+
+    <body>
+        <script>
+//            //synchronous
+//            function geek(callbck) {
+//
+//                callbck();
+//            }
+//            geek(function show() {
+//                console.log("I am show function"); //1st chance
+//            });
+//            console.log("end");   //2nd chance
+
+            //asynchronous
+            setTimeout(function show() {
+                console.log("I am Show Function");
+            }, 5000);
+            console.log("end");
+        </script>
+    </body>
+</html>

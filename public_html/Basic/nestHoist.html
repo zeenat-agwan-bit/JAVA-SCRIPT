@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>VARIABLE_HOISTING</title>
+    </head>
+    <body>
+        <script>
+            //a variable can be used before it has been declared
+    function outer(){       
+    var j = "J a local var of outer Function";
+            document.write(j+ "<br>");
+            function inner(){
+                var k= "k a local var of outer Function";
+            }
+                
+            }
+            var b = 20;
+            document.write(a + "," + b);
+
+            /*
+             var a;
+             var b;
+             a=10;
+             document.write(a+","+b);
+             b=20;
+             
+             */
+        </script>
+    </body>
+</html>

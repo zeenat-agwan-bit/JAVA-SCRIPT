@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+getElementById
+-->
+<html>
+    <head>
+        <title>Tree</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Learn JS</h1>
+        <h2>shows</h2>
+        <p id="dom">Welcome
+
+            <span>GEEKS</span>
+            <em>WORLD</em>
+            <span>Youtube</span>
+            <b>hey!</b>
+        </p>
+        <p id="show">
+            <span>bye</span>
+            User
+        </p>
+        <div>
+            <p>!st p inside div<p>
+            <p>2nd p inside div<p>
+        </div>
+        <script>
+            //getElementById
+            var res = document.getElementById("dom");
+            document.write(res + "<br>");
+            console.log(res);
+
+
+            //getElementsByTagName(return list to access)
+            var res1 = document.getElementsByTagName("p" + "<br>");
+            // var res1 = document.getElementsByTagName("*");
+            // var res1 = document.body.getElementsByTagName("*");
+            document.write(res1);
+            console.log(res1);
+            //more specific
+            var res2 = document.getElementById("dom").getElementsByTagName("span");
+            document.write(res2);
+            console.log(res2);
+
+            //length property
+            var len = document.getElementsByTagName("p").length;
+            document.write(len + "<br>");
+
+            console.log(len);
+
+            //loop
+            var loop = document.getElementsByTagName("p").length;
+            for(let i=0;i<loop; i++){
+                var loop = document.getElementsByTagName("p")[i];
+                 document.write(result+ "<br>");
+                 console.log(result);
+            }
+           
+
+            
+
+
+
+
+
+
+
+
+
+
+
+        </script>  </body>
+</html>

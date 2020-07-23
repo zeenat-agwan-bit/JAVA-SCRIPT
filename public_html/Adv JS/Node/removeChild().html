@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+parentNode.removeChild(targetNode);
+-->
+<html>
+    <head>
+        <title>remove child</title>
+         </head>
+    <body>
+        
+        <ul id="myul">
+            <li id="i1" >ITEM 1</li>
+              <li>ITEM 2</li>
+                <li>ITEM 3</li>
+                  <li>ITEM 4</li>
+                   </ul>
+               <script>
+                   var u=document.getElementById("myul");
+                 //  var i=document.getElementById("i1");
+                   var delNode=u.removeChild(u.firstElementChild);//spaces excluded
+               var delNode=u.removeChild(u.childNodes[3]);              
+    console.log(delNode);
+                                     
+                                                //OR
+                                      var i=document.getElementById("i1");
+                                        var delNode=i.parentNode.removeChild(i);       
+                   
+                   </script>
+                   
+    </body>
+</html>

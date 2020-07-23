@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+[] array
+{} object
+-->
+<html>
+    <head>
+        <title>Object Destructuring</title>
+    </head>
+    <body>
+        <script>
+            var course = {
+                courseName: "js",
+                duration: "6Months",
+                tutor: "Geeks"
+            };
+            //object destructuring
+            //   var{ciursename,duration,tutor}=course;
+            //var{courseName:cname ,duration:time ,tutor:teacher}=course;
+            var {courseName, tutor} = course;
+            console.log(tutor);  //geeks  
+            //  console.log(time);
+            //    console.log(teacher);
+        </script>
+    </body>
+</html>

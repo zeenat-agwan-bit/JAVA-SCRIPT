@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+[] array
+{} object
+-->
+<html>
+    <head>
+        <title>Object Destructuring</title>
+    </head>
+    <body>
+        <script>
+            //object passing to a function
+             var course = {
+                courseName: "js",
+                duration: "6Months",
+                tutor: "Geeks"
+            };
+function show({coursename,duration,tutor}){
+    console.log(duration);
+    console.log(tutor);
+}
+show(course);
+//___________________________________________________________
+//object returning from a function
+ var course1 = {
+                courseName: "js",
+                duration: "6Months",
+                tutor: "Geeks"
+            };
+            function show1(z){
+ return z;
+}
+ //  var x=show(course1)  ;        //store it in a variable
+ //  
+  //object destructuring
+  var{courseName,tutor}=show1(course1);
+  console.log(courseName);
+  console.log(tutor);
+  //__________________________________________________________
+  //nested object destructuring
+ var course2 = {
+                courseName: "js",
+                duration: "6Months",
+                tutor: "Geeks" ,
+                student:{s1:"rahul",s2:"sona"}
+            };
+         //destructuring  
+  var{courseName,duration,tutor,student:{s1,s2}}=course2;
+  //console.log(course2.student.s1)//old way
+  console.log(courseName);
+  console.log(tutor);
+  console.log(s1);
+  console.log(s2);
+  
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+
+<html>
+
+    <body>
+<!--        (start , deletion, insertion)-->
+        <script>
+            /*changes the contents of an array
+             /removing existing elements
+             and/or adding new elements.
+             the method cchanges the original array.
+             */
+            //SYNTAX:ar_nm.splice(start,deletecount,replacevalues);
+
+            var zee = ["aaa", 90, "bbb", 80, "mona"];
+   //deletion         
+ // zee.splice(2);//delete all from index 2
+ //zee.splice(2,1);//delete 1 element from index 2
+ //zee.splice(2,2);//delete 2 element from index 2
+  
+  //insertion
+  //zee.splice(2,0,"Dell","HP");//insert an ele at index 2 without deleting(0)any element
+  zee.splice(2,3,"Dell","HP");//insert an ele at index 2 with deleting(3)elements then insert dell and hp
+  
+  
+  document.write(zee + "<br>");
+
+
+
+        </script>
+    </body>
+</html>

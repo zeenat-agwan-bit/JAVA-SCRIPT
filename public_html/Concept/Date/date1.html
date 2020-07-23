@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+getDate()
+getDay()
+setDate()
+setFullYear()
+setHours()
+setDay()........so on
+
+
+-->
+<html>
+    <body>
+        <script>
+            var d = new Date();
+            var month = d.getMonth();
+            var day = d.getDay();
+            document.write(getMonthName(month) + "<br>");
+            document.write(getDayName(day) + "<br>");
+
+            function getMonthName(monthnum) {
+                var monthname = ["jan", "feb", "mar", "april", "may",
+                    "june", "july", "aug", "sept", "oct", "nov", "dec"];
+                return monthname[monthnum];
+            }
+            function getDayName(daynum) {
+                var dayname = ["sun", "mon", "tue", "wed", "thu",
+                    "fri", "sat"];
+                return dayname[daynum];
+            }
+
+
+        </script>
+    </body>
+</html>

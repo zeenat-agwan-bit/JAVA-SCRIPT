@@ -1,0 +1,29 @@
+<html>
+
+    <body>
+        <script>
+//determines whether a value  is a
+//safe integer.
+//that can be exactly all integers
+//from(2^53-1) to -(2^53-1)
+////method  returns true if the
+//value is of the type Number,
+//and safe integer,otherwise it 
+//returns false.
+           
+            document.write(Number.isSafeInteger(100) + "<br>");
+            document.write(Number.isSafeInteger(-90) + "<br>");
+           document.write(Number.isSafeInteger(200-100) + "<br>");
+           document.write(Number.isSafeInteger(90.67) + "<br>");//false
+           document.write(Number.isSafeInteger(0.1) + "<br>");//false
+           document.write(Number.isSafeInteger() + "<br>");//false
+           document.write(Number.isSafeInteger("") + "<br>");//false
+           
+           
+           
+           
+
+        </script>
+    </body>
+</html>
+

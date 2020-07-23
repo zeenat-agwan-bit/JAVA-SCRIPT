@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Text Event</title>
+    </head>
+    <body>
+        <div id="mydiv" style="windows: 200px; height: 200px;
+             background-color: orchid;padding: 10px; " >
+            Name<input type="text" id="mytext" >
+        </div>
+        <script>
+            var txt = document.getElementById("mytext");
+            function text(e) {
+                console.log(e.type + '  ' + e.data );
+            }
+            txt.addEventListener("textInput", text, false);
+         
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+[] array
+{} object
+-->
+<html>
+    <head>
+        <title>Object Destructuring</title>
+    </head>
+    <body>
+        <script>
+            var {a=40, b = 20} = {a: 90};
+console.log(a);//90
+console.log(b);//20
+//key y and z
+  var {a:y=40, z = 20} = {a: 90};
+console.log(y);//90
+console.log(z);//20
+
+        </script>
+    </body>
+</html>

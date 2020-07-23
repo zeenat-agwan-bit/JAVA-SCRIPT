@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>fornm validation</title>
+    </head>
+    <body>
+        <form action="" name="myfrm" id="mid">
+            UserName : <input type="text" name="u_field"><small id="usmall"></small><br><br>
+            <input type="submit" name="m_sbtn" value="submit"><br><br>
+        </form>
+        <script>
+            function validateData() {
+                var ptrn = /^([^0-9\w]*)$/;   //number and white spaces are excluded
+                if (ptrn.test(document.myfrm.u_field.value)) {
+                   document.getElementById("usmall").textContent="user is valid";
+                    document.getElementById("usmall").style.color="green";
+                } else {
+                     document.getElementById("usmall").textContent="user is invavalid";
+                    document.getElementById("usmall").style.color="red";
+                    
+                   
+                }
+            }
+            document.myfrm.u_field.addEventListener("keyup", validateData);//u can take blur  focus keyup
+        </script>
+    </body>
+</html>

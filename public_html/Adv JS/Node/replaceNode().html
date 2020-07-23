@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+var rplcN=parentNode.replaceChild(newChild , oldChild);
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+         <ul id="myul">
+            <li>ITEM 1</li>
+              <li id="i2" >ITEM 2</li>
+                <li>ITEM 3</li>
+                  <li>ITEM 4</li>
+                   </ul> 
+        <span id="myspan">Span </span>
+        <script>
+           //parentNode.replaceChild(newChild,oldChild)
+           var u=document.getElementById("myui");
+          var i=document.getElementById("i2") ;
+          //relacing with new node
+          //creating a new element
+          var newChild=document.createElement("li");
+          newChild.textContent="item N";
+         var rplcN= u.replaceChild(newChild,i);
+          console.log(u);
+          console.log(rplcN);
+          
+        </script>
+    </body>
+</html>

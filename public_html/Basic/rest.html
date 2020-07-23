@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //rest parameters always positioned at last
+            function show(a, ...args) {
+                document.write(a + "<br>");
+                document.write(args[0]);
+            }
+            show(10, 20, 30, 40, 50); //10 20
+        </script>
+    </body>
+</html>

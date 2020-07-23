@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+console.log(dir)//to see all 
+alert()
+open() creates a new secondary browser window
+similar to choosing new window from the file menu.
+close()
+-->
+<html>
+    <head>
+        <title> close()</title>
+    </head>
+    <body>
+        <h1>Dialog box</h1>
+        <button type="button" id="btn" >Create New Window</button>
+        <script>
+            var ce=wn=window.open("https://www.twitter.com","_blank","height=400,width=600");
+            function exitWindow() {
+            window.close();
+        }
+     
+          document.getElementById("btn").addEventListener("click", exitWindow);
+
+        </script>
+    </body>
+</html>

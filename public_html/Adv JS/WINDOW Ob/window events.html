@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--
+window events with html ,js ..etc
+google it .
+-->
+<html>
+    <head>
+        <title>window events</title>
+         </head>
+<!--         <body onload="alert('Hello Window')">-->
+<body>
+             <div id="mydiv"></div>
+             <script>
+                 function show(){
+                     document.getElementById("mydiv").textContent="Hello Window";
+                 }
+                 window.addEventListener("load",show);
+                 </script>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+
+<html>
+    <!
+    number+number=number
+    String+number=String
+    number+String=String
+    string+string=String
+
+    number-number=number
+    String-number=number,NaN
+    number-String=NaN,number
+
+    --> 
+    <body>
+        <script>
+            var a = "50";
+            var b = 10;
+            var c = 30;
+            var d = "heel"
+            var e = "hell"
+            document.write(typeof (a + b) + "<br>");//510
+            document.write(a - d + "<br>"); //NaN
+            document.write(b - a + "<br>");//-40
+            document.write(d - e + "<br>");//nan
+            document.write(a - b + "<br>");//40
+
+            document.write(typeof (d + b) + "<br>");//string
+
+
+            document.write(a + b + c + "<br>");//501030
+            document.write(a + d + e + "<br>");//s+s=S s+s=s 50heelhell
+            document.write(c + a + d + "<br>");//n+s=s 3050+d=3050heel
+
+
+        </script>
+    </body>
+</html>

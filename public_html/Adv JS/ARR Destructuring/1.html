@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+var a=[10,20,30]
+[x,y,z]=a
+-->
+<html>
+
+    <body>
+        <script>
+            let a = ["js", "sixmons", "Geeks"];
+            //  var[ courseName,duaration,tutor]=a; //a is source
+            //now i dont want duration
+            let [courseName, , tutor] = a; //a is source
+
+            console.log(courseName);
+            //     console.log(duaration);
+            console.log(tutor);
+            //__________________________________________
+              var a,b;
+           [a=40,b=20]=[10];  //10 20 ....10 priority high
+            console.log(a);
+              console.log(b);
+        </script>
+    </body>
+</html>

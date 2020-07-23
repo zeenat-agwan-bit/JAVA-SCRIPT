@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+it is a read only property of window object.
+it stores data in a web browser .
+it doesnt sent to the server.
+data stored in a session storage gets cleared when the page session ends.
+a page session lasts for as long as the browser is open and
+survives over page reloads and restores.
+methods:
+setitem(key,value)
+getitem(key,value)
+key(n)
+removeItem(key)
+-->
+
+<html>
+    <head>
+        <title>session</title>
+        </head>
+    <body>
+        <h1>Local Storage</h1>
+        <script>
+            //data will be persistent
+             sessionStorage.setItem('username','geeks');
+             console.log(sessionStorage);
+             console.log(sessionStorage.getItem('username'));
+             console.log(sessionStorage.key(1));
+              console.log(sessionStorage.removeItem('email'));
+               console.log(sessionStorage.clear());
+             
+              </script>
+    </body>
+</html>

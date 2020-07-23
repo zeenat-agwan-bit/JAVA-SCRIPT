@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+the element property innerHTML gets or sets the
+HTML or XML mqrkup contained
+within the element.
+setting the value of innerHTML easily replace the existing contents
+of an element with new content.
+script tag inserted with innerHtml shoukd not executed.
+should not use innerHTML when inserting plain text;
+instead use textContent.
+var content=element.innerHTMl;
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+       </head>
+    <body>
+        <ul id="myul">
+            <li>ITEM 1</li>
+              <li>ITEM 2</li>
+                <li>ITEM 3</li>
+                  <li>ITEM 4</li>
+        </ul>
+        <script>
+            var u=document.getElementById("myul");
+          //  u.innerHTML="";//empty string replace html content
+          u.innerHTML="<li>Java</li><li>css</li><li>c++</li>";//replace existing
+            console.log(u);
+            </script>
+    </body>
+</html>

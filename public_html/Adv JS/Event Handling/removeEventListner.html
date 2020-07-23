@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+Object.removeEventListner(event,handler,capturePhase);
+it can works with Dom as ell as html
+-->
+<html>
+    <head>
+        <title>DOM EVENT MODEL</title>
+    </head>
+    <body>
+        <h1>remove Event listner</h1>
+        <button id='mybtn'>Click Me</button>
+<!--        <button onclick="alert('Button Clicked');">Click mE</button>-->
+        <script>
+            function show() {
+                alert('button clicked 1');
+            };
+              var btn = document.getElementById("mybtn");
+            //prevents from overriding
+            btn.addEventListener("click", show,false);//false means bubbling phase
+             btn.addEventListener("click", show,true);//true means bubbling phase
+           
+           btn.removeEventListener("click",show,true);
+        </script>
+    </body>
+
+</html>

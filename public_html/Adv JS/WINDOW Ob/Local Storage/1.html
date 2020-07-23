@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+for 1 to yrs resides on ur browser
+methods:
+setitem(key,value)
+getitem(key,value)
+key(n)
+removeItem(key)
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        </head>
+    <body>
+        <h1>Local Storage</h1>
+        <script>
+            //data will be persistent
+             window.localStorage.setItem('username','geeks');//no expiry
+              window.localStorage.setItem('email','geeks@gmail.com');//no expiry
+              console.log(localStorage.getItem('username'));//geeks
+              console.log(localStorage.key(1));//email
+              console.log(localStorage.removeItem('email'));
+              console.log(localStorage.clear());//to clear all
+          </script>
+    </body>
+</html>

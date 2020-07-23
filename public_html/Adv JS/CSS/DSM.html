@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+Dynamic Style Manipulation
+overcome the limitation of style.
+-->
+<html>
+    <head>
+        <title>DSM</title>
+<!--      inline-->
+        <style>
+            .myclass1{
+                background-color: blue;
+            }
+            .myclass2{
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h2 id="myh2" title="somedata" class="myclass2"
+            style="background-color:aqua ;font-size: 50px;">Heading</h2>
+        <script>
+
+            var h = document.getElementById("myh2");
+          h.className="myclass1";//override
+          console.log(h);
+        </script>
+    </body>
+</html>

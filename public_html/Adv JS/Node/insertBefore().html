@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>insertBefore()</title>
+    </head>
+    <body>
+        <div id="myid">
+            <ul id="myul">
+                <li>jQuery</li>
+                 <li id="mylang">Angular JS</li>
+                  <li>React JS</li>
+                   <li id="myd3">D3 JS</li>
+            </ul>
+        </div>
+        <script>
+          //parentNode.insertBefore(newNode , referenceNode)
+          
+          //when insert a new element
+          //ACCESSING PARENT NODE
+          var parentNode=document.getElementById("myul");
+          //CREATING NEW li Element
+          var newNode=document.createElement("li");
+          //adding text using textContent
+          
+          newNode.textContent="backBone js";
+          
+          //accessing reference node
+          var refNode=document.getElementById("mylang");
+          //insert new element
+          parentNode.insertBefore(newNode , refNode);
+          
+          
+          console.log(parentNode);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Local Variable</title>
+    </head>
+    <body>
+        <script>
+
+            function outer() {
+                //local variable
+                var j = " j i am local";
+                document.write(j + "<br>");
+
+                function inner() {
+                    var i = "I i am local";
+                    document.write(i);
+                    document.write(j);//inner can access outer VAR
+                }
+                inner();
+                document.write(i);
+
+
+            }
+            outer();
+
+        </script>
+    </body>
+</html>

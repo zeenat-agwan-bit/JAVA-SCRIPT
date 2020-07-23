@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+createCaption
+deleteCaption
+createtHead
+deletetHead
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+         </head>
+    <body>
+       <table border="1" id="mytab">
+           <caption>My Table captions</caption>
+           <thead>
+                   <tr>
+                       <th>ID</th>
+                       <th>Name</th>
+                         <th>Course</th>
+               
+                   </tr>
+                  </thead>
+               <tbody>
+                   <tr>
+                       <td>11</td>
+                       <td>raj</td>
+                         <td>js</td>
+               </tr>
+               <tr>
+                       <td>22</td>
+                       <td>som</td>
+                         <td>c++</td>
+               </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                       <td>33</td>
+                       <td>koi</td>
+                         <td>java</td>
+               </tr>
+               </tfoot>
+           </table>
+        <script>
+    var table=document.getElementById("mytab");
+    var thead=table.createTHead();
+    thead.innerHTML="<tr><th>ID</th><th>Name</th><th>course</th></tr>";
+    console.log(thead);
+    
+    //delete
+  //  table.deleteTHead();
+    </script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>supply a title</title>
+    </head>
+    <body>
+        <script>
+            //super class
+            var Mobile = function () {
+                this.a = 10;
+            };
+
+            //Prototype Property Of Mobile
+            Mobile.prototype.z = 30;
+
+            //sub class
+            var Samsung = function () {
+                /*It call Super Class Constructor 
+                 and initialize propert
+                 without this you cant access
+                 super class property
+                 using sub class object*/
+                Mobile.call(this);
+                this.b = 20;
+            };
+            var Galaxy = function () {
+                Samsung.call(this);
+                this.c = 100;
+            };
+
+            //Prototype inheritance
+            Samsung.prototype = Object.create(Mobile.prototype);
+            Samsung.prototype.constructor = Samsung;
+            Galaxy.prototype = Object.create(Samsung.prototype);
+            Galaxy.prototype.constructor = Galaxy;
+
+            var m = new Mobile();
+            var s = new Samsung();
+            var g = new Galaxy();
+            
+            document.write("Galaxy object can access<br>");
+            document.write("Mobile A:"+g.a+"<br>");
+            document.write("Samsung B:"+g.b+"<br>");
+            document.write("Mobile Prototype Z:"+g.z+"<br>");
+            document.write("Galaxy C:"+g.c+"<br> <br>");
+            
+            document.write("Samsung object can access<br>");
+            document.write("Mobile A:"+s.a+"<br>");
+            document.write("Samsung B:"+s.b+"<br>");
+            document.write("Mobile Prototype Z:"+s.z+"<br>");
+            document.write("Samsung C:"+s.c+"<br> <br>");
+            
+            document.write("Mobile object can access<br>");
+            document.write("Mobile A:"+m.a+"<br>");
+            document.write("Samsung B:"+m.b+"<br>");
+            document.write("Mobile Prototype Z:"+m.z+"<br>");
+            document.write("Samsung C:"+m.c+"<br> <br>");
+            
+            
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

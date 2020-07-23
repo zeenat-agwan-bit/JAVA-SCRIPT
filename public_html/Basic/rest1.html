@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            //rest parameters always positioned at last
+            function showData(a, ...args) {
+                console.log("a:" + a);
+                console.log(arguments);
+            }
+            showData(10, 20, 30, 40, 50);
+            //argument object
+            function  show(a) {
+                console.log("a:" + a);
+                console.log(arguments);
+            }
+            show(10, 20, 30, 40, 50);
+        </script>
+    </body>
+</html>

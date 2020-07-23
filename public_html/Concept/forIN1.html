@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            /*used to loop through an object's properties
+             iteration purpose
+             for(var varible_name in object_name){
+             block of statements
+             }
+             */
+            function Mobile(model_no) {
+                //instance members
+                this.model = model_no;
+                this.color = 'blue';
+                this.ram = '4gb';
+                this.price = function () {
+                    document.write(this.model + "price rs. 9000<br>");
+                };
+            }
+
+            var sams = new Mobile('galaxy');
+            var nokia = new Mobile('9090');
+
+            document.write(Object.keys(nokia));
+            //to see all instance properties of nokia
+        </script>
+
+    </body>
+</html>

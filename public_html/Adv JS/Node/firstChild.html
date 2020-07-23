@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+DOM traversal:
+parentNode ,parentElement, childNodes ,children
+firstChild,firstElementChild,lastChild,lastElementChild
+previousSibling,previousElementSibling,nextSibling
+nextElementSibling
+-->
+<html>
+    <head>
+        <title class="geek">TREE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1  id="uid"> Learning JS</h1>
+        <!--  This is a comment    -->
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p id="myid" class="atrr"><span class="myspan">Bye</span>Geeky
+            <span class="myspan1">Bye</span>
+            <em>hello</em></p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+
+
+
+        </div>
+        <div id="show1">
+            <p class="zee">!st p inside div</p>
+            <span class="my">Bye</span>
+        </div>
+        <div>hello i am div</div>
+
+        <script>
+            //firstChild vs firstElementChild
+            var result = document.getElementById("myid");
+           document.write(result.firstElementChild);
+          console.log(result.firstChild);
+            
+    // (lastChild/ lastElementChild)
+  var result = document.getElementById("myid");
+           document.write(result.lastElementChild);
+          console.log(result.lastChild.textContent="Last Node");
+
+// (previousSibling/previousElementSibling)
+  var result = document.getElementById("myid");
+           document.write(result.lastElementChild.previousElementSibling);
+          console.log(result.lastChild.previousSibling.textContent="zeeee");
+          
+          // (NextSibling/NextElementSibling)
+  var result = document.getElementById("myid");
+           console.log(result.firstElementChild.nextElementSibling);
+          console.log(result.firstChild.nextSibling);
+          
+          
+
+        </script>
+    </body>
+</html>

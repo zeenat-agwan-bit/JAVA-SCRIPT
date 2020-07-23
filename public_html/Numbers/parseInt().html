@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+parse a string an returns an integer
+parseInt(string,radix);
+the radix parameter is used to specify
+which numeral system to be used.
+"0x" 16
+10 decimal
+-->
+<html>
+
+    <body>
+        <script>
+            document.write(parseInt("10") + "<br>");//10
+            document.write(parseInt("12.00") + "<br>");//12
+            document.write(parseInt("15.45") + "<br>");//15
+            document.write(parseInt("10 20 30") + "<br>");//10
+            document.write(parseInt(" 90 ") + "<br>");//90
+            document.write(parseInt("10 years") + "<br>");//10
+            document.write(parseInt("020") + "<br>");//20
+            document.write(parseInt("12", 8) + "<br>");//10 decimal convert
+            document.write(parseInt("0x12") + "<br>");//18
+            document.write(parseInt("10", 16) + "<br>");//16
+            document.write(parseInt("") + "<br>");//NaN
+        </script>
+    </body>
+</html>

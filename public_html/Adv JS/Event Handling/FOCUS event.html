@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+focus
+blur
+focusin
+focusout
+-->
+<html>
+    <head>
+        <title>Project</title>
+    </head>
+    <body>
+        <h1>focus Event</h1>
+        <div id="mydiv" style="windows: 200px; height: 200px;
+             background-color: orchid;padding: 10px; " >
+            Name<input type="text" id="mytext" >
+        </div>
+            <script>
+                var txt = document.getElementById("mytext");
+                function focus(e) {
+                    txt.style.backgroundColor = 'lightyellow';
+
+                }
+                function bFocus(e) {
+                    txt.style.backgroundColor = 'white';
+                }
+                //txt.addEventListener("focus", focus, false);
+                //txt.addEventListener("blur", bFocus, false);
+                 txt.addEventListener("focusin", focus, false);
+                txt.addEventListener("focusout", bFocus, false);
+
+
+            </script>
+    </body>
+</html>

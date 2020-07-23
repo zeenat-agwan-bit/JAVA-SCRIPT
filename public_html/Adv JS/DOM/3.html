@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+more specific
+getElementsByClass("class name")
+-->
+<html>
+    <head>
+        <title class="geek">Tree</title>
+    </head>
+    <body>
+        <h1> Learning JS</h1>
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p class="myclass"><span>Bye</span>Geeky</p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+        </div>
+        <script>
+
+//            var res = document.getElementById("show").getElementsByClassName("geek");
+//            document.write(res + "<br>");
+//            console.log(res);
+
+            var len = document.getElementsByClassName("geek").length;
+
+            for (let i = 0; i < len; i++) {
+                var result = document.getElementsByClassName("geek")[i];
+                document.write(result + "<br>");
+                console.log(result);
+            }
+        </script>
+    </body>
+</html>

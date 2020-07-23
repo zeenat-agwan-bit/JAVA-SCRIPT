@@ -1,0 +1,53 @@
+<html>
+    <!
+    the math object holds a set of constants and methods
+    that enable more complex mathematical operations than
+    the basic arithmetic operators.
+    We cant instantiate a Math object.
+    the Math Object is static so its properties and methods
+    accesses directly-->  
+    <body>
+        <script>
+            //for every refresh no will changed
+            document.write(Math.random() + "<br>");
+            //you can also
+            document.write(Math.random() * 100 + 1 + "<br>");
+            //for OTP
+            document.write(Math.floor((Math.random() * 10 )+ 1 ));//42
+            //integer value
+
+
+
+            document.write(Math.floor(2.1) + "<br>");//2
+            document.write(Math.floor(6.65) + "<br>");//6
+            document.write(Math.floor(0.4) + "<br>");//0
+            document.write(Math.floor(0.6) + "<br>");//0
+            document.write(Math.floor(-2.1) + "<br>");//-3
+            document.write(Math.floor(-6.65) + "<br>");//-7
+
+            document.write(Math.round(2.1) + "<br>");//2
+            document.write(Math.round(6.65) + "<br>");//7
+            document.write(Math.round(0.4) + "<br>");//0
+            document.write(Math.round(0.6) + "<br>");//1
+            document.write(Math.round(-2.1) + "<br>");//-2
+            document.write(Math.round(-6.65) + "<br>");//-7
+            document.write(Math.round(0.5) + "<br>");//1
+
+
+
+
+            document.write(Math.min(90, 30, 34, 89) + "<br>");
+            document.write(Math.max(89, 45, 87, 67) + "<br>");
+
+
+            document.write(Math.PI + "<br>");
+            document.write(Math.sqrt(64) + "<br>");
+            document.write(Math.abs(-64) + "<br>");//64
+            document.write(Math.abs(null) + "<br>");//0
+            document.write(Math.pow(2, 3) + "<br>");//8
+            document.write(Math.trunc(12.564) + "<br>");//12
+            //only integer part
+
+        </script>
+    </body>
+</html>

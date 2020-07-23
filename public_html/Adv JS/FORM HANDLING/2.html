@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+form handling 
+elements[]
+
+-->
+<html>
+    <head>
+        <title>Accessing form fields</title>
+    </head>
+
+    <body>
+        <form action="" name="myfrm" id="mid">
+            UserName : <input type="text" name="m_username_field" id="uid"><br><br>
+            password : <input type="password" name="m_password_field"><br><br>
+            <input type="submit" name="m_sbtn" value="submit"><br><br>
+        </form>
+
+
+        <script>
+
+//with getElementById
+var unm=document.getElementById("uid");
+console.log(unm);
+console.log(unm.name);
+console.log(unm.type);
+console.log(unm.id);
+//with element index number
+var unm1=document.myfrm.elements[0];//name
+console.log(unm1);
+console.log(unm1.name);
+console.log(unm1.type);
+console.log(unm1.id);
+//with element[' name attribute value ']
+//var unm2=document.myfrm.elements['m_username_field'];
+var unm2=document.myfrm.m_username_field;
+console.log(unm2);
+console.log(unm2.name);
+console.log(unm2.type);
+console.log(unm2.id);
+unm2.value="zeenat";//can set also
+        </script>
+    </body>
+</html>

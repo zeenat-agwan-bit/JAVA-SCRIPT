@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+HTMLTableRowElement
+Properties: cells ,rowIndex ,,sectionRowIndex
+Methods: insertCell()
+                   deleteCell()
+-->
+<html>
+    <head>
+        <title>HTMLTableSectionElement</title>
+    </head>
+    <body>
+
+        <table border="1" id="mytab">
+            <caption>My Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+
+                </tr>
+            </thead>
+            <tbody id="mytbody">
+                <tr>
+                    <td>11</td>
+                    <td>raj</td>
+                    <td>js</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>som</td>
+                    <td id="mytd">c++</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>33</td>
+                    <td>koi</td>
+                    <td>java</td>
+                </tr>
+            </tfoot>
+        </table>
+        <script>
+
+//            var table= document.getElementById("mytab");
+//            var row = table.rows;
+//            console.log(row[0].cells.length);//3
+//            console.log(row[0].cells[0]);//<th>ID</th>
+//            console.log(row[2].cells.namedItem("mytd"));//<td>.......</td>
+//        console.log(row[2].cells[1].innerHTML);//som
+//        row[2].cells[1].innerHTML="hello";
+
+var table= document.getElementById("mytab");
+ var row = table.rows;
+var cell1=row[0].insertCell(3);
+var cell2=row[1].insertCell(3);
+cell1.textContent="fees";
+cell2.textContent="10000";
+
+//delete cell
+row[1].deleteCell(0);//first row and 0th cell 
+    
+    </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>class(special function)</title>
+    </head>
+    <body>
+        <script>
+            /*
+             if you dont write any constructor then default 
+             constructor will be called.if you write then simply
+             you override that constructor
+             */
+
+            //class declaration
+            class Mobile {
+               //we oveeride default cons 
+                    display()
+                    {
+                    return "Prototype Member";
+                };
+            }
+            var nokia = new Mobile();
+            document.write(nokia.display());
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+createCaption
+deleteCaption
+createTHead
+deleteTHead
+createTFoot
+deleteTFoot
+insertRow()
+deleteRow()
+
+-->
+<html>
+    <head>
+        <title>row</title>
+         </head>
+    <body>
+       <table border="1" id="mytab">
+              <thead>
+                   <tr>
+                       <th>ID</th>
+                       <th>Name</th>
+                         <th>Course</th>
+               
+                   </tr>
+                  </thead>
+               <tbody>
+                   <tr>
+                       <td>11</td>
+                       <td>raj</td>
+                         <td>js</td>
+               </tr>
+               <tr>
+                       <td>22</td>
+                       <td>som</td>
+                         <td>c++</td>
+               </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                       <td>33</td>
+                       <td>koi</td>
+                         <td>java</td>
+               </tr>
+               </tfoot>
+           </table>
+        <script>
+            //insert a new row
+            //if index -1 then....means in last
+    var table=document.getElementById("mytab");
+ //   var row=table.insertRow(-1);//in last
+  var row=table.insertRow(1);//in first index
+      (row.insertCell(0).textContent="new data");//new cell
+     
+    
+    //delete row
+  //  table.deleteinsertRow(-1); with index no
+    </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var a = [10, 20, 30];
+            //before elements of a ref to b
+            //   var b=a;
+            //after using spread operator
+            //  var b = [...a];
+            //you can also
+            var b = [5, ...a, 40, 50]
+            //   a[0] = 50;
+            //  b[0]=80; //now no effect on the value of b cz of spread operator
+            console.log(a);
+            console.log(b);
+            var c = [...a, ...b];
+            console.log(c);
+            var d = {cN: "js", tutor: "geek"};
+            //  var e=d;
+            var e = {...d, duration: "6months"};//now b would not be affect
+            var f={...d,...e};
+            d.cN = "java";
+            console.log(d);
+            console.log(e);
+            console.log(f);
+        </script>
+    </body>
+</html>

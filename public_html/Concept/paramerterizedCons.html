@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>para cons</title>
+    </head>
+    <body>
+        <script>
+            /*
+             if you dont write any constructor then default 
+             constructor will be called.if you write then simply
+             you override that constructor
+             */
+
+            //class declaration
+            class Mobile {
+                constructor(model_no, color)
+                {
+                    this.model = model_no;
+                    this.color = color;
+                }
+                show() {
+                    return this.model + "price rs 9000"
+                    +this.color;
+                }
+                ;
+            }
+            var nokia = new Mobile('asha' ,'white'+" <br>");
+            document.write(nokia.show());
+
+
+        </script>
+    </body>
+</html>

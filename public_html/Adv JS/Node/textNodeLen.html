@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+length and
+data property
+-->
+<html>
+    <head>
+        <title>Text</title>
+        </head>
+    <body>
+        <h2 id="myh2">hello js</h2>
+        <script>
+            var h=document.getElementById("myh2");
+            var res=h.firstChild.length;
+            console.log(res);//8
+            console.log(h.firstChild.data="I am New Data");//get data 
+            //append data
+         h.firstChild.appendData(" World ");
+           console.log(h.firstChild );
+            
+            
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html>
+    <head>
+        <title>setInterval()</title>
+    </head>
+    <body>
+        <div id="mydiv"></div>
+        <button id="mybtn" type="button" >Clear Time</button>
+        <script>
+
+//         setInterval(() => {
+//                document.getElementById("mydiv").textContent += "HEllo";
+//            }, 2000);     //fun call in each 2 sec for every 2 sec
+//            
+            //if you want to stop it
+            //use clearInterval()
+var intervalID=setInterval(() => {
+              document.getElementById("mydiv").textContent += "HEllo";
+            }, 2000);    
+            function clrtime()
+            {
+            clearInterval(intervalID);
+            }
+            document.getElementById("mybtn").addEventListener("click",clrtime);
+                </script>
+    </body>
+</html>

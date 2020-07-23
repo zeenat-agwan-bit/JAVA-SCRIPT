@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Properties of Attribute object
+-->
+<html>
+    <head>
+        <title class="geek">TREE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> Learning JS</h1>
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p id="myid" class="atrr"><span class="myspan">Bye</span>Geeky
+            <span class="myspan1">Bye</span></p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+
+
+
+        </div>
+        <div id="show1">
+            <p class="zee">!st p inside div</p>
+            <span class="my">Bye</span>
+        </div>
+        <div>hello i am div</div>
+
+        <script>
+            //Attibute properties=name,value
+            var res = document.getElementById("myid").attributes[1].nodeName;
+            document.write(res + "=");
+            var res1 = document.getElementById("myid").attributes[1].nodeValue;
+            document.write(res1 + "<br>");
+
+            var len = document.getElementById("myid");
+            document.write(len.attributes.length + "<br>");
+            for (let i = 0; i < len.attributes.length; i++) {
+                //depricated
+//                document.write(len.attributes[i].nodeName + "=");
+//                document.write(len.attributes[i].nodeValue + "<br>");
+                document.write(len.attributes[i].name + "=");
+                document.write(len.attributes[i].value + "<br>");
+
+
+            }
+        </script>
+    </body>
+</html>

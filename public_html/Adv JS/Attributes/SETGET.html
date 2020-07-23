@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+set and get attribute
+-->
+<html>
+    <head>
+        <title>Attribute</title>
+    </head>
+    <body>
+
+
+        <h2 id="myh2" title="somedata" class="myclass" style="background-color: red;font-size: 50px;">Heading</h2>
+        <script>
+            var h = document.getElementById("myh2");
+            //  h.setAttribute('class',"myclasszee")
+            //    console.log(h);
+            //OR
+            h.className = "myclasszee";
+            console.log(h);
+
+            //getAttribute
+            var g = h.getAttribute('id');
+            console.log(h);
+            console.log(g);//myh2
+            h.setAttribute('title', 'mytitle');//title="mytitle"
+            console.log(h);
+
+            //css style
+            //h.setAttribute("style", "font-style:italic");//override but dont use this
+            h.style.fontStyle="italic";
+            console.log(h);
+
+        </script>
+    </body>
+</html>

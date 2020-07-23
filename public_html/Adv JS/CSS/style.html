@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+dont use set property always bcz set prom replace attribute 
+.style dont.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <h2 id="myh2" title="somedata" class="myclass" style="background-color: red;font-size: 50px; font: white">Heading</h2>
+        <script>
+
+            var h = document.getElementById("myh2");
+            console.log(h.style);//CSSStylrDeclaration
+            
+            var bg=h.style.backgroundColor;//dom prop..op:red
+            console.log(bg);
+            
+            h.style.backgroundColor="blue";//set bg
+            console.log(h);
+            
+            h.style.fontSize="90px";
+            console.log(h.firstChild);//heading
+        </script>
+    </body>
+</html>

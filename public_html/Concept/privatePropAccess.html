@@ -1,0 +1,26 @@
+<!--using var let or const you can create private properties and methods-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <script>
+            
+            var Mobile = function (model_no, sprice) {
+                //instance members
+                this.model = model_no;//public
+                this.color = 'red';
+                var price = 900;//private
+                this.sp = sprice;
+                this.sellingprice = function () {
+                    return(price);
+                }
+            };
+            
+            var sams = new Mobile('galaxy', 3000);
+            var nokia = new Mobile('9090', 5444);
+            
+            document.write(nokia.sellingprice());
+        </script>
+    </body>
+</html>

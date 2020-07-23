@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>single level</title>
+        </head>
+    <body>
+    <script>
+        class Father{
+            showFMoney(){
+                return "Father's Money<br>";
+            }
+        }
+        class Son extends Father{
+            showSMoney(){
+                return "Son's Money"
+            }
+        }
+        var s=new Son();
+        document.write(s.showFMoney());
+        document.write(s.showSMoney());
+       
+        </script>
+    </body>
+</html>

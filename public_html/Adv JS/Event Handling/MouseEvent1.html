@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+mousedown
+mouseup
+click
+doubleclick
+mouseenter (no bubbleup)
+mouseleave
+mouseout
+mousemove
+contextmenu
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+    </head>
+    <body>
+        <h1>Mouse Event</h1>
+        <div id="one" style="width:100px ; height:100px; background-color: red">
+            <div id="two" style="width: 60px; height: 60px;background-color: black"></div>
+        </div>
+        <script>
+            function div1(e) {
+                console.log(e.type);
+            }
+            function div2(e) {
+                console.log(e.type);
+            }
+            var divOne = document.getElementById("one");
+            var divTwo = document.getElementById("two");
+            divTwo.addEventListener("mousedown", div1, false);
+            divTwo.addEventListener("mouseup", div1, false);
+            divTwo.addEventListener("click", div1, false);
+            divTwo.addEventListener("dblclick", div1, false);//seven event
+            // divTwo.addEventListener("mouseenter", div1, false);
+            //divTwo.addEventListener("mouseleave", div1, false);
+            //  divTwo.addEventListener("mouseover", div1, false);
+            //divTwo.addEventListener("mouseout", div1, false);
+
+            divTwo.addEventListener("mousemove", div2, false);
+            divTwo.addEventListener("contextmenu", div1, false);
+
+//--------------------------------------------------------------------------------
+//apply all method on these 2 too.
+            divOne.addEventListener("click", div1, false);
+            divOne.addEventListener("click", div1, false);
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+Resizing windows-
+resizeBy():
+window
+width
+height
+resizeTo():window
+width
+height
+-->
+<html>
+    <head>
+        <title>Resizing</title>
+    </head>
+    <body>
+        <h1>Resizing window</h1>
+        <button type="button" id="opnbtn">Open Window</button>
+        <button type="button" id="resizebtn">Resize Window</button>
+        <script>
+            var newWindow;
+            function  opnWin() {
+                newWindow = window.open("", "_blank", "width=300 ,height=200");
+                newWindow.document.write(" I Am New Window");
+            }
+            function  resizeWin() {
+            //  newWindow.resizeBy(200, 200);//zoom
+                newWindow.resizeTo(200, 200);//small
+                newWindow.focus();
+            }
+            document.getElementById("opnbtn").addEventListener("click",opnWin);
+             document.getElementById("resizebtn").addEventListener("click",resizeWin);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   
+    <body>
+     <script>
+         function getR(w,h){
+           if(isNaN(w) || isNaN(h)){
+               throw "para is not a number";
+           }  
+         }
+         try{
+        getR(10,"A");
+         //dont write imp code here only exception purpose
+     }
+     catch(e){
+         document.write(e);
+     }
+    
+         document.write("get ...");
+  
+     
+         </script>
+    </body>
+</html>

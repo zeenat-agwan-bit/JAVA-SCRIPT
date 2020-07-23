@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+createCaption
+deleteCaption
+createTHead
+deleteTHead
+createTFoot
+deleteTFoot
+
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+         </head>
+    <body>
+       <table border="1" id="mytab">
+           <caption>My Table captions</caption>
+           <thead>
+                   <tr>
+                       <th>ID</th>
+                       <th>Name</th>
+                         <th>Course</th>
+               
+                   </tr>
+                  </thead>
+               <tbody>
+                   <tr>
+                       <td>11</td>
+                       <td>raj</td>
+                         <td>js</td>
+               </tr>
+               <tr>
+                       <td>22</td>
+                       <td>som</td>
+                         <td>c++</td>
+               </tr>
+               </tbody>
+               <tfoot>
+                    <tr>
+                       <td>33</td>
+                       <td>koi</td>
+                         <td>java</td>
+               </tr>
+               </tfoot>
+           </table>
+        <script>
+    var table=document.getElementById("mytab");
+    var tFoot=table.createTFoot();//create empty Tfood
+    tFoot.innerHTML="<tr><th>100</th><th>roni</th><th>dell</th></tr>";
+    console.log(tFoot);
+    
+    //delete
+  //  table.deleteTFoot();
+    </script>
+    </body>
+</html>

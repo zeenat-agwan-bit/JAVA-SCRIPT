@@ -1,0 +1,31 @@
+<html>
+
+    <body>
+        <script>
+            //global method
+            /*it converts the object argument 
+             to a number that represents the
+             object's value.
+             if parameter is date obj it returns
+             the number of millisecods since 
+             midnight january 1,1970 UTC.
+             */
+            
+            var a = true;
+            var b = false;
+            var c = 100;
+            var d = "100";
+            var e = "Hello";
+            var f = new Date();
+            document.write(Number(a) + "<br>");//1
+            document.write(Number(b) + "<br>");//0
+            document.write(Number(c) + "<br>");//100
+            document.write(Number(d) + "<br>");//100
+            document.write(Number(e) + "<br>");//NaN
+            document.write(Number(f) + "<br>");//currentdate
+            
+            
+        </script>
+    </body>
+</html>
+

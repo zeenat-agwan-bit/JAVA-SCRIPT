@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+form handling 
+methods:
+onreset onsubmit
+-->
+<html>
+    <head>
+        <title>Accessing forms</title>
+    </head>
+
+    <body>
+        <form action="" name="myfrm" id="mid">
+            UserName : <input type="text" name="m_username_field"><br><br>
+            password : <input type="password" name="m_password_field"><br><br>
+            <input type="submit" name="m_sbtn" value="submit"><br><br>
+        </form>
+<hr>
+<hr>
+        <form action="" name="yourfrm" id="myid">
+            UserName : <input type="text" name="y_username_field"><br><br>
+            password : <input type="password" name="y_password_field"><br><br>
+            <input type="submit" name="y_sbtn" value="submit"><br><br>
+        </form>
+
+        <script>
+//with index number
+var mform=document.forms[1];//0 means 1st form and 1 means second form
+console.log(mform);
+
+//with name attribute using square bracket
+var frm=document.forms['myfrm'];
+console.log(frm);
+
+//with name attribute using dot
+var frms=document.myfrm;
+console.log(frms);
+
+//with getElementById
+var frm1=document.getElementById("myid");
+console.log(frm1);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+DOM traversal:
+parentNode ,parentElement, childNodes ,children
+firstChild,firstElementChild,lastChild,lastElementChild
+previousSibling,previousElementSibling,nextSibling
+nextElementSibling
+-->
+<html>
+    <head>
+        <title class="geek">TREE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1  id="uid"> Learning JS</h1>
+        <!--  This is a comment    -->
+        <h2>LogIn shows</h2>
+        <p class="geek myclass">Welcome <span>GEEKS</span>
+            <em>WORLD</em> <span>Youtube</span></p>
+
+        <p id="myid" class="atrr"><span class="myspan">Bye</span>Geeky
+            <span class="myspan1">Bye</span></p>
+        <div id="show">
+            <p>!st p inside div<p>
+            <p class="geek">2nd p inside div</p>
+            <p class="geek 1">3rd p inside div</p>
+
+
+
+        </div>
+        <div id="show1">
+            <p class="zee">!st p inside div</p>
+            <span class="my">Bye</span>
+        </div>
+        <div>hello i am div</div>
+
+        <script>
+            //children vs childNodes
+            var result = document.getElementById("uid");
+            console.log(result.childNodes);
+            console.log(result.children);//ignore whitespace blankspace space tab
+
+    //length (childNodes / children)
+var len=document.getElementById("myid").children.length;
+document.write(len);
+console.log(len.children);
+
+////loop
+//var loop=document.getElementById("uid").childNodes.length;
+//for(i=0;i<loop;i++){
+//    document.write(loop.childNodes[i]);
+//}
+
+//text content
+var con=document.getElementById("myid");
+console.log(con.children[0].textContent="i am zeenat");
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>ONE SUPER CLASS AND 2 SUB CLASSES</title>
+    </head>
+    <body>
+        <script>
+            //Super class
+            var Mobile = function () {
+
+            };
+//(one method of super class which is accessible for sub classes)
+            //Prototype method
+            Mobile.prototype.getModel = function () {
+                return this.model;
+            }
+
+            //Sub-Class
+            var Samsung = function (model, price) {
+                this.model = model;
+                this.price = price;
+            }
+            //Sub-Class
+            var Lenovo = function (model) {
+                this.model = model;
+            };
+
+//Inheritance Code
+            Samsung.prototype
+                    = Object.create(Mobile.prototype);
+            Samsung.prototype.constructor = Samsung;
+            Lenovo.prototype =
+                    Object.create(Mobile.prototype);
+            Lenovo.prototype.constructor = Lenovo;
+
+            Samsung.prototype.getPrice = function () {
+                return this.price;
+            };
+
+            var galaxy = new Samsung('Galaxy', 4000);
+            var asha = new Lenovo('kkk 8');
+            console.log(galaxy.getModel());
+            console.log(asha.getModel());//super class method
+            console.log(galaxy.getPrice());//sub class method
+
+
+        </script>
+
+    </body>
+</html>
